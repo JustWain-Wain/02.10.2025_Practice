@@ -9,3 +9,4 @@ if not competitors:
     competitors = [20, 48, 52, 38, 36, 13, 7, 41, 34, 24, 5, 51, 9, 14, 28]
     print(competitors)
 print(check_winners(competitors, student_score))
+input("Нажмите Enter для выхода.")

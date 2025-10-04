@@ -49,3 +49,5 @@ if n == "1":
 elif n == "2":
     print("Результат:")
     print(caesar_decode(user_string, offset))
+
+input("Нажмите Enter для выхода.")

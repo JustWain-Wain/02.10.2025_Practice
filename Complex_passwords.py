@@ -1,7 +1,7 @@
 from random import choices, shuffle, randint
 from string import ascii_uppercase, ascii_lowercase
 
-def distribution(settings, length):     # Ф-ция неравномерно распределяет длину пароля по  
+def distribution(settings, length):
     number_of_conditions = sum(settings)
     n = number_of_conditions
     res = [0]*number_of_conditions
@@ -42,3 +42,4 @@ user_settings = input("Выберите настройки пароля (в лю
 user_password_length = int(input("Введите длину пароля: "))
 
 print("Результат:", "".join(generate_password(user_settings, user_password_length)), sep="\n")
+input("Нажмите Enter для выхода.")

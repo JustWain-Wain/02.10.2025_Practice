@@ -12,3 +12,4 @@ def print_pack_report(order):
                 yield f"{n} - не заказываем!"
 
 for i in print_pack_report(int(input("Введите количество пирожных: "))): print(i)
+input("Нажмите Enter для выхода.")
