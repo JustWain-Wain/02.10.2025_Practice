@@ -20,4 +20,4 @@ def hangman(word):
     return f"Вы отгадали слово \"{word}\"!" if res == word_letters else f"Вы проиграли. Загаданное слово: {word}."
 
 print(hangman(input("Загадайте слово: ")))
-input("Нажмите Enter для выхода.")
+input("\nНажмите Enter для выхода.")

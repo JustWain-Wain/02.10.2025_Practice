@@ -41,5 +41,5 @@ print("""Настройки пароля:
 user_settings = input("Выберите настройки пароля (в любом порядке без пробелов): ")
 user_password_length = int(input("Введите длину пароля: "))
 
-print("Результат:", "".join(generate_password(user_settings, user_password_length)), sep="\n")
-input("Нажмите Enter для выхода.")
+print("\nРезультат:", "".join(generate_password(user_settings, user_password_length)), sep="\n")
+input("\nНажмите Enter для выхода.")

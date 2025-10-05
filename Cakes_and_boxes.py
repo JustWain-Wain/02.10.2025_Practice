@@ -1,5 +1,5 @@
 def print_pack_report(order):
-    for n in range(order, 1, -1):
+    for n in range(order, 0, -1):
         res = str(int(n%5 == 0)) + str(int(n%3 == 0))
         match res:
             case "11":
@@ -12,4 +12,4 @@ def print_pack_report(order):
                 yield f"{n} - не заказываем!"
 
 for i in print_pack_report(int(input("Введите количество пирожных: "))): print(i)
-input("Нажмите Enter для выхода.")
+input("\nНажмите Enter для выхода.")

@@ -11,7 +11,7 @@ def caesar_encode(string, key=0):
         alphabet_upper = ascii_uppercase
     len_alphabet = len(alphabet_lower)
     for i in range(len(string)):
-        if string[i] in "!#$%&'()*+,-./:;<=>?@[]^_`{|}~ ":
+        if string[i] in "!#$%&'()*+,-./:;<=>?@[]^_`{|}~ 0123456789":
             result += string[i]
         elif string[i] == string[i].upper():
             result += alphabet_upper[(alphabet_upper.find(string[i]) + key) % len_alphabet]
@@ -30,7 +30,7 @@ def caesar_decode(string, key=0):
         alphabet_upper = ascii_uppercase
     len_alphabet = len(alphabet_lower)
     for i in range(len(string)):
-        if string[i] in "!#$%&'()*+,-./:;<=>?@[]^_`{|}~ ":
+        if string[i] in "!#$%&'()*+,-./:;<=>?@[]^_`{|}~ 0123456789":
             result += string[i]
         elif string[i] == string[i].upper():
             result += alphabet_upper[(alphabet_upper.find(string[i]) - key) % len_alphabet]
@@ -44,10 +44,10 @@ n = input("Выберите действие: ")
 user_string = input("Введите сообщение: ")
 offset = int(input("Введите сдвиг: "))
 if n == "1":
-    print("Результат:")
+    print("\nРезультат:")
     print(caesar_encode(user_string, offset))
 elif n == "2":
-    print("Результат:")
+    print("\nРезультат:")
     print(caesar_decode(user_string, offset))
 
-input("Нажмите Enter для выхода.")
+input("\nНажмите Enter для выхода.")
