@@ -21,9 +21,9 @@ def convert_arabic_to_roman(arabic_number):
     ones = arabic_number
     return f(thousands, "M") + f(hundreds, "CDM") + f(tens, "XLC") + f(ones, "IVX")
 
-def converter(list_of_numbers):
+def converter(list_of_nums):
     result = []
-    for number in list_of_numbers:
+    for number in list_of_nums:
         is_roman = number[0].isalpha()
         if is_roman:
             result.append(convert_roman_to_arabic(number))
