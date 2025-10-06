@@ -1,6 +1,6 @@
 def hangman(word):
     if any(i.isnumeric() for i in word): return "Введенная строка не является словом."
-    health = "❤"*10
+    health = "♥"*10
     word = word.lower()
     word_length = len(word)
     res = ["_"]*word_length
