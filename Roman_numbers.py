@@ -31,8 +31,7 @@ def converter(list_of_nums):
             result.append(convert_arabic_to_roman(number))
     return result
 
-list_of_numbers = input("Введите список римских или арабских цифр: \n").split()
-roman_test = ["IV", "IX", "XLII", "XCIX", "MMXXIII"]
+list_of_numbers = input("Введите список римских или арабских цифр (каждое число должно быть в диапазоне от 1 до 4000): \n").split()
 
 print("\nРезультат:", converter(list_of_numbers),sep="\n")
 input("\nНажмите Enter для выхода.")
