@@ -2,6 +2,22 @@ from random import choices, shuffle, randint
 from string import ascii_uppercase, ascii_lowercase
 
 def distribution(settings, length):
+    """
+    Неравномерно распределяет количество символов в каждом виде настроек.
+
+    Args:
+        settings (list): список булевых значений настроек пароля
+        length (int): длина пароля
+
+    Returns:
+        
+
+    Raises:
+
+
+    Example:
+        >
+    """
     number_of_conditions = sum(settings)
     n = number_of_conditions
     res = [0]*number_of_conditions
@@ -16,6 +32,21 @@ def distribution(settings, length):
 
 
 def generate_password(settings="", length=0):
+    """
+
+
+    Args:
+
+
+    Returns:
+
+
+    Raises:
+
+
+    Example:
+        >
+    """
     special = "!#$%&()*+,-./:;<=>?@[]^_`{|}~"
     nums = "0123456789"
     bool_settings = [0, 0, 0, 0]

@@ -1,4 +1,19 @@
 def hangman(word):
+    """
+
+
+    Args:
+
+
+    Returns:
+
+
+    Raises:
+
+
+    Example:
+        >
+    """
     if any(i.isnumeric() for i in word): return "Введенная строка не является словом."
     health = "♥"*10
     word = word.lower()

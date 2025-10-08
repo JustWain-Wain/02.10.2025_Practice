@@ -1,6 +1,21 @@
 from string import ascii_uppercase, ascii_lowercase
 
 def caesar_encode(string, key=0):
+    """
+
+
+    Args:
+
+
+    Returns:
+
+
+    Raises:
+
+
+    Example:
+        >
+    """
     result = ""
     ru_alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
     if any(1 for i in ru_alphabet if i in string):
@@ -20,6 +35,21 @@ def caesar_encode(string, key=0):
     return result
 
 def caesar_decode(string, key=0):
+    """
+
+
+    Args:
+
+
+    Returns:
+
+
+    Raises:
+
+
+    Example:
+        >
+    """
     result = ""
     ru_alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
     if any(1 for i in ru_alphabet if i in string):

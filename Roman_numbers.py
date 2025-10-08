@@ -1,8 +1,38 @@
 def f(x, symbols):
+    """
+
+
+    Args:
+
+
+    Returns:
+
+
+    Raises:
+
+
+    Example:
+        >
+    """
     l = ("", "0", "00", "000", "01", "1", "10", "100", "1000", "02")
     return ''.join(symbols[int(i)] for i in l[x])
 
 def convert_roman_to_arabic(roman_number):
+    """
+
+
+    Args:
+
+
+    Returns:
+
+
+    Raises:
+
+
+    Example:
+        >
+    """
     numbers = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     arabic_numbers = list(map(numbers.get, roman_number))
     for i in range(len(roman_number)-1):
@@ -11,6 +41,21 @@ def convert_roman_to_arabic(roman_number):
     return sum(arabic_numbers)
 
 def convert_arabic_to_roman(arabic_number):
+    """
+
+
+    Args:
+
+
+    Returns:
+
+
+    Raises:
+
+
+    Example:
+        >
+    """
     arabic_number = int(arabic_number)
     thousands = arabic_number // 1000
     arabic_number %= 1000
