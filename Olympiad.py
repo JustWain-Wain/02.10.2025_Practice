@@ -4,7 +4,7 @@ def check_winners(list_of_competitors, score=0):
 
     Args:
         list_of_competitors (list): список, который содержит количество баллов каждого участника олимпиады
-        score (int): количество баллов конкретного участника
+        score (int): количество баллов конкретного участника.
 
     Returns:
         "Вы в тройке победителей!": если score входит в тройку наибольших значений в list_of_competitors
